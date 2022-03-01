@@ -9,6 +9,7 @@ class Saucer extends Model
     protected $fillable = [
         'name',
         'description',
+        'price',
         'status'
     ];
 

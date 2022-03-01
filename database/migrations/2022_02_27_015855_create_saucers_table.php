@@ -17,6 +17,7 @@ class CreateSaucersTable extends Migration
             $table->id();
             $table->string('name', 100);
             $table->text('description');
+            $table->unsignedDecimal('price', $precision = 10, $scale = 2);
             $table->char('status')->default(1);
             $table->timestamps();
         });
